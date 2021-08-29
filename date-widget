@@ -4,7 +4,7 @@
     <style>
 #lbl {
     font-family: monospace;
-    font-size: x-large;
+    font-size: xx-large;
     color: #626262;
     padding: 5px;
     border: 1px solid #ececec;
@@ -15,7 +15,7 @@
 
 }
 #date{
-    font-size:x-large;
+    font-size:large;
 }
 body{
     background-color: aliceblue;
@@ -40,13 +40,7 @@ body{
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    <label for="start">
-        Enter the Date:
-    </label>
-  
-    <input type="date" name="begin" 
-        placeholder="dd-mm-yyyy" value=""
-        min="1997-01-01" max="2030-12-31">
+    var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
 
     var greet;
 
